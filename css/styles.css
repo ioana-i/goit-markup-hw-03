@@ -247,39 +247,40 @@ img {
   padding: 45px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.values-card {
-  margin: auto;
-  /*  Set the width of the elements  */
-  flex-basis: calc((100% - 20px) / 5);
-  padding: 10px;
-  display: inline-block;
+  display: flex;
 }
 
 .our-values-card-set {
   display: flex;
-  /* Make a flex container multiline */
-  flex-wrap: wrap;
-  /* Set gap between rows and columns */
   gap: 20px;
   padding: 20;
   text-align: center;
   justify-content: center;
-  flex-direction: row;
   margin-top: 94px;
-
   flex-direction: row;
 }
 
-.values-title {
+.values-card {
+  gap: 20px;
+  text-align: left;
+  justify-content: left;
+  flex-direction: row;
+  margin: auto;
+  /*  Set the width of the elements  */
+  flex-basis: calc((100% - 20px) / 5);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.values-card h2 {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: left;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .values-text {
@@ -447,6 +448,7 @@ img {
   letter-spacing: 0.06em;
   color: var(--maintextcolor);
   margin-bottom: 8px;
+  text-align: left;
 }
 .portfolio-text {
   font-weight: 400;
@@ -454,6 +456,7 @@ img {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--secondarytextcolor);
+  text-align: left;
 }
 
 /* Footer */
